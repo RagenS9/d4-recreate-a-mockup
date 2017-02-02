@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/*always use box-sizing. encourages you to use image width here, too*/
+
+body {
+    padding: 20px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*.box {*/
+    /*position: absolute;
+    top: 50px;
+    left: 50px;*/
+    /*can change the top and left to move the box around the page. but absolute will freeze it in place, but that won't work on every screen or device. So absolute positioning has its purposes, but use absolute with JS because JS can reposition according to device. He rarely recommends anyone use absolute*/
+    
+    /*position:relative;
+    top: -20px;*/
+    /*this says -20 pixels up from where it normally would have landed in the text. He doesn't recommend using position very often, but things like dropdown menus might need it. */
+
+    /*position: fixed;*/
+    /*makes something fixed in space. now other elements will scroll under it. THis can be used for chat box, banner ads, logo, footer or header. THis one is just a one liner. Sometimes might need to do a little more adjusting. NOT FOR BACKGROUNDS, that is something different. */
+
+    /*position: static;*/
+    /*This UNDOES positioning. disables it. You can do this if you have something positioned, but you want to give the user the option to toggle it off. Like a fixed navigation bar or a drop down menu or the annoying chat box. */
+
+    /*position: relative;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    /*These are offsets*/
+    /*z-index: 1;*/
+    /*z-index property lets you rearrange order, so like if a dropdown menu pops under an image You can change the zorder to change the depth of the order and the dropdown will appear over the photo. LIke z-index: 1000; setting the thing over whatever else there is. z-index: -1; puts it back to normal. */
+    /*position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: lightpink;
+    padding: 100px;
+    border: 50px solid darkorange;
+}*/
+.row {
+    /*this centers the row*/
+    border: 1px solid red;
+    float: left;
+}
+/*problem: floating overrides your margins. */
+
+.column {
+    border: 1px solid darkorange;
+    float: left;
+    padding: 10px;
+}
+/*div tags are block tags that want to sit one on top of the other, and are greedy because they want to take up 100% of the width. So make secondary classes for each one.*/
+/*adding padding to the column makes sure that text in different columns doesn't sit side by side to each other, making it hard to read.*/
+
+
+.column-offset-1 {
+    margin-left: 8.33333%
+}
+/*need to add gutter, so add in html column-offset-1. That is offset one column width. THen add margin to that. */
+
+.column-8 {
+width: 66.66667%;
+background: lightpink;
+}
+/*can do this a couple of ways.  We want this to be 8 columns, so 8/12 x 100 gives you percent 66.66667%. The number of columns you want divided by the total number of columns. so whatever divided by 12.*/
+
+.column-3 {
+    height: 100%
+    background: lightskyblue;
+    width: 25.0%
+    
+}
+/*3/12 x 100 is 0.25%*/
+/*bootstrap does the calculations for you. so this is old school. But until the other programs catch up, you need to know how to do this classic method.*/
+
+/*the way that you work around blocks stacking, you use float*/
+

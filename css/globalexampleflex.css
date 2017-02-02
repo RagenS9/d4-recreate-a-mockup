@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/*always use box-sizing. encourages you to use image width here, too*/
+
+body {
+    padding: 20px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 40px;
+    /*display: block;
+    display: inline;
+    display: inline-block;
+
+    display: none;
+    visibility: hidden;
+    opacity: 0.5;*/
+
+}
+
+.rowrow {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.rowrowrow {
+    display: flex;
+    margin-bottom: 40px;
+}
+/*display flex (everything that's inside of this should start behaving like a grid);  and display block (don't remember what this one does, but google says: A block has some whitespace above and below it and tolerates no HTML elements next to it, except when ordered otherwise (by adding a float declaration to another element, for instance). display: inline means that the element is displayed inline, inside the current block on the same line.); and display inline (treats things like inline, but can't use margins and padding); display inline block (treats things like an inline, but can use margins and padding); display none (removes it from the document; nothing rendered at all; removes it totally); visibility hidden (visibility says it will still take up space on the page . . . makes a gap . . . even though you can't see it.); opacity: 0.5; (lets you make things a little transluscent*/
+
+.column {
+   flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    background: lightpink;
+}
+
+.column: last-child {
+    margin-right: 0;
+}
+/*flex 1 means to take up one column. */
+
+
+.column-8 {
+    flex: 8;
+    background: lightpink;
+}
+/*flex 8 means 8% of the page. */
+
+.column-3 {
+    flex: 3;
+    background: lightpink;
+}
+/*flex 3 means 3% of the page.*/
+
+
