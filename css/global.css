@@ -7,7 +7,7 @@ img {
 }
 .navContainer {
     margin: 1px, auto;
-    background-color: whitesmoke;
+    background-color: 255, 255, 255, 100;
     font-size: 13.5px;
     color: darkslategray;
 }
@@ -29,7 +29,7 @@ img {
     margin-right: 30px;
 }
 body {
-    background-color: whitesmoke;
+    background-color: 255, 255, 255, 100;
 }
 header {
     background-image: url("../img/background.jpg");
@@ -45,3 +45,67 @@ header {
     text-align: center;
     font-size: 50px; 
 }
+
+.prices {
+    margin-left: 115.5px;
+    margin-right: 115.5px;
+    display: flex;
+}
+
+.price5ContainerCol {
+    flex: 3;
+    padding: 10px;
+    margin: 30px 5px;
+    /*margin-right: 5px;*/
+    text-align: center;
+}
+
+.rowpriceType {
+    font-size: 13px;
+    color: white;
+    padding: 30px;
+    /*need to figure out how to adjust the kerning or stretch the font here*/
+}
+
+.rowpriceAmount {
+    font-size: 60px;
+    color: white;
+    padding: 10px;
+}
+
+.rowpriceSchedule {
+    font-size: 16;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+.price5Head {
+    background-color: rgb(64, 131, 61);
+    /*display: flex;*/
+    margin-bottom: 40px;
+}
+
+.price25ContainerCol {
+    flex: 3;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.price25Head {
+    background-color: rgb(32, 52, 116);
+    /*display: flex;*/
+    margin-bottom: 40px;
+}
+
+.price45ContainerCol {
+    flex: 3;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.price45Head {
+    background-color: rgb(14, 14, 14);
+    /*display: flex;*/
+    margin-bottom: 40px;
+}
+
