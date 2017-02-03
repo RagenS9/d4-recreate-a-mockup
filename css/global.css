@@ -7,9 +7,10 @@ img {
 }
 .navContainer {
     margin: 1px, auto;
-    background-color: 255, 255, 255, 100;
+    background-color: rgb(255, 255, 255);
     font-size: 13.5px;
-    color: darkslategray;
+    color: rgba(0, 0, 0, .5);
+    /*color: darkslategray;*/
 }
 .rowNav {
     margin-bottom: 2px;
@@ -29,7 +30,7 @@ img {
     margin-right: 30px;
 }
 body {
-    background-color: 255, 255, 255, 100;
+    background-color: rgb(255, 255, 255);
 }
 header {
     background-image: url("../img/background.jpg");
@@ -64,7 +65,7 @@ header {
     font-size: 13px;
     color: white;
     padding: 30px;
-    /*need to figure out how to adjust the kerning or stretch the font here*/
+    letter-spacing: 2px;
 }
 
 .rowpriceAmount {
@@ -78,7 +79,7 @@ header {
     color: rgba(255, 255, 255, 0.5);
     padding: 10px;
 }
-
+/*apply shading on image and all of the color headers. figure out span on the pricing text */
 .price5Head {
     background-color: rgb(64, 131, 61);
     /*display: flex;*/
@@ -113,3 +114,8 @@ header {
     margin-bottom: 40px;
 }
 
+/*for the gray text in footer . . . still have to figure out the "links"*/
+footer {
+    background-color: black;
+    color: rgba(255, 255, 255, .5);
+}
