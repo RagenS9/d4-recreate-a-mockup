@@ -6,7 +6,6 @@ img {
     width: 100%;
 }
 .navContainer {
-    margin: 1px, auto;
     background-color: rgb(255, 255, 255);
     font-size: 16.5px;
     letter-spacing: -0.5px;
@@ -138,35 +137,33 @@ button {
     padding-left: 15px;
 }
 
-/*start the new way with two sections*/
 .infoCol1 {
     max-width: 960px;
-    margin-top: 50px;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-left: 13%;
+    margin-right: 13%;
     display: flex;
 }
 
 .infoRow {
     flex: 1;
-    padding: 10px;
-    margin-right: 20px;
+    padding: 30px;
+    margin-left: 10px;
     text-align: left;
 }
 
 .infoCol2 {
     max-width: 960px;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 20px;
+    margin-left: 13%;
+    margin-right: 13%;
     display: flex;
 }
 
 .infoHead {
     letter-spacing: 4px;
     font-weight: 200;
-    font-size: 20px;  
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .infoP {
@@ -174,66 +171,10 @@ button {
     color: rgba(0, 0, 0, .7);
 }
 
-/*this is the way i originally did it*/
-/*.info {
-    max-width: 960px;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 20px;
-    display: flex;
-}*/
-
-/*.infoContainerCol {
-    flex: 2;
-    padding: 10px;
-    margin-right: 20px;
-    text-align: left;
-}*/
-
-/*h2 {
-    letter-spacing: 4px;
-    font-weight: 200;
-    font-size: 20px;
-    margin-top: 50px;
-}*/
-
-/*p {
-    line-height: 150%;
-    color: rgba(0, 0, 0, .7);
-}*/
-/*end my original method*/
-
-/*what follows is the internet girl's way of making things line up. It lined them up horizontally, but then i couldn't get them to line up vertically. */
-/*.info {
-    max-width: 960px;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}*/
-
-/*
-@media all and (min-width: 40em) {
-    .info {
-        width: 50%;
-    }
-
-@media all and (min-width: 60em) {
-    .info {
-        width: 70%
-    }*/
-
-/*.infoContainerCol {
-    display: flex;
-    padding: 0.5em;
-    width: 100%;
-}*/
-
 footer {
     background-color: black;
     color: rgba(255, 255, 255, .5);
-    padding: 28px;
+    padding: 27px;
     text-align: center;
 }
 
